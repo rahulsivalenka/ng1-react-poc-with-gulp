@@ -3,23 +3,11 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
-    // "presets": [
-    //   "es2015"
-    // ],
-    // "plugins": [
-    //   "transform-es2015-modules-systemjs",
-    //   [
-    //     "transform-runtime",
-    //     {
-    //       "polyfill": false,
-    //       "regenerator": false
-    //     }
-    //   ]
-    // ],
     "optional": [
       "runtime",
       "optimisation.modules.system"
-    ]
+    ],
+    "stage": 0
   },
   paths: {
     "github:*": "jspm_packages/github/*",
@@ -34,6 +22,8 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
     "plugin-babel": "npm:systemjs-plugin-babel@0.0.9",
+    "react": "npm:react@18.2.0",
+    "react-dom": "npm:react-dom@18.2.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.5.0"
     },
@@ -941,6 +931,18 @@ System.config({
       "randombytes": "npm:randombytes@2.1.0",
       "safe-buffer": "npm:safe-buffer@5.2.1"
     },
+    "npm:react-dom@18.2.0": {
+      "loose-envify": "npm:loose-envify@1.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@18.2.0",
+      "scheduler": "npm:scheduler@0.23.0",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:react@18.2.0": {
+      "loose-envify": "npm:loose-envify@1.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:readable-stream@1.1.14": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "core-util-is": "npm:core-util-is@1.0.3",
@@ -1053,6 +1055,10 @@ System.config({
     },
     "npm:safer-buffer@2.1.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:scheduler@0.23.0": {
+      "loose-envify": "npm:loose-envify@1.4.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:sha.js@2.4.11": {

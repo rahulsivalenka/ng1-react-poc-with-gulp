@@ -49,13 +49,19 @@ let browserSyncConfig = {
 browserSyncConfig = {
 	server: {
 		baseDir: './',
+		files: ['dist/**/*.js'],
 	}
 }
 
 let babelCompilerOptions = {
 	presets: ["es2015"],
-	plugins: ['transform-es2015-modules-systemjs', ['transform-runtime', { 'polyfill': false, 'regenerator': false }]]
+	plugins: ['transform-react-jsx', 'transform-es2015-modules-systemjs', ['transform-runtime', { 'polyfill': false, 'regenerator': false }]]
 	// presets: ["preset-env"]
+	// "optional": [
+	// 	"runtime",
+	// 	"optimisation.modules.system"
+	// ],
+	// "stage": 0
 };
 
 let bundles = [

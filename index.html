@@ -9,15 +9,17 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
 <body ng-app="app">
-  <div  ng-controller="AppController">
+  <div ng-controller="AppController">
     <h1>{{ message }}</h1>
-
+    <div id="react-app"></div>
   </div>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
   <script>
     System.import('dist/app/app')
+      .catch(console.error.bind(console));
+      System.import('dist/react/app')
       .catch(console.error.bind(console));
   </script>
 
