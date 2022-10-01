@@ -176,9 +176,9 @@ gulp.task('run', (callback) => {
 		// 'watch-config'
 	];
 
-	bundles.forEach((bundle) => {
-		sequences.push(`watch-cache-bust-${bundle.name}`);
-	});
+	// bundles.forEach((bundle) => {
+	// 	sequences.push(`watch-cache-bust-${bundle.name}`);
+	// });
 
 	return runSequence(sequences, ['browserSync'], callback);
 });

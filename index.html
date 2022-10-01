@@ -11,15 +11,21 @@
 <body ng-app="app">
   <div ng-controller="AppController">
     <h1>{{ message }}</h1>
-    <div id="react-app"></div>
+    <button ng-click="toggleReactComponent()">Toggle React</button>
+    <div ng-if="showReactComponent">
+      <react-comp></react-comp>
+    </div>
+    <!-- <div id="react-app"></div> -->
   </div>
 
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
   <script>
-    System.import('dist/app/app')
-      .catch(console.error.bind(console));
-      System.import('dist/react/app')
+    // System.import('dist/react/app')
+    //   .then(
+        // () => 
+        // )
+        System.import('dist/app/app')
       .catch(console.error.bind(console));
   </script>
 

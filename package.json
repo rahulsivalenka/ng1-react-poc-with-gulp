@@ -7,8 +7,12 @@
     "main": "app/app.js",
     "dependencies": {
       "angular": "npm:angular@^1.8.3",
-      "react": "npm:react@^18.2.0",
-      "react-dom": "npm:react-dom@^18.2.0"
+      "lodash.assign": "npm:lodash.assign@^4.2.0",
+      "lodash.frompairs": "npm:lodash.frompairs@^4.0.1",
+      "lodash.mapvalues": "npm:lodash.mapvalues@^4.6.0",
+      "lodash.some": "npm:lodash.some@^4.6.0",
+      "react": "npm:react@16.8.0",
+      "react-dom": "npm:react-dom@16.8.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

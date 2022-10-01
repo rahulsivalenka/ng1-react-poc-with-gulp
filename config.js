@@ -21,9 +21,13 @@ System.config({
     "babel-preset-es2015": "npm:babel-preset-es2015@6.24.1",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
+    "lodash.assign": "npm:lodash.assign@4.2.0",
+    "lodash.frompairs": "npm:lodash.frompairs@4.0.1",
+    "lodash.mapvalues": "npm:lodash.mapvalues@4.6.0",
+    "lodash.some": "npm:lodash.some@4.6.0",
     "plugin-babel": "npm:systemjs-plugin-babel@0.0.9",
-    "react": "npm:react@18.2.0",
-    "react-dom": "npm:react-dom@18.2.0",
+    "react": "npm:react@16.8.0",
+    "react-dom": "npm:react-dom@16.8.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.5.0"
     },
@@ -807,6 +811,12 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:lodash.mapvalues@4.6.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:lodash.some@4.6.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:lodash@3.10.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -902,6 +912,12 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
     },
+    "npm:prop-types@15.8.1": {
+      "loose-envify": "npm:loose-envify@1.4.0",
+      "object-assign": "npm:object-assign@4.1.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react-is": "npm:react-is@16.13.1"
+    },
     "npm:public-encrypt@4.0.3": {
       "bn.js": "npm:bn.js@4.12.0",
       "browserify-rsa": "npm:browserify-rsa@4.1.0",
@@ -931,17 +947,25 @@ System.config({
       "randombytes": "npm:randombytes@2.1.0",
       "safe-buffer": "npm:safe-buffer@5.2.1"
     },
-    "npm:react-dom@18.2.0": {
+    "npm:react-dom@16.8.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "loose-envify": "npm:loose-envify@1.4.0",
+      "object-assign": "npm:object-assign@4.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "react": "npm:react@18.2.0",
-      "scheduler": "npm:scheduler@0.23.0",
-      "stream": "github:jspm/nodelibs-stream@0.1.0",
-      "util": "github:jspm/nodelibs-util@0.1.0"
+      "prop-types": "npm:prop-types@15.8.1",
+      "react": "npm:react@16.8.0",
+      "scheduler": "npm:scheduler@0.13.6",
+      "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
-    "npm:react@18.2.0": {
-      "loose-envify": "npm:loose-envify@1.4.0",
+    "npm:react-is@16.13.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:react@16.8.0": {
+      "loose-envify": "npm:loose-envify@1.4.0",
+      "object-assign": "npm:object-assign@4.1.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "prop-types": "npm:prop-types@15.8.1",
+      "scheduler": "npm:scheduler@0.13.6"
     },
     "npm:readable-stream@1.1.14": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
@@ -1057,8 +1081,9 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:scheduler@0.23.0": {
+    "npm:scheduler@0.13.6": {
       "loose-envify": "npm:loose-envify@1.4.0",
+      "object-assign": "npm:object-assign@4.1.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:sha.js@2.4.11": {
