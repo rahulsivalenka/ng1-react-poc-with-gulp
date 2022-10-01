@@ -1,10 +1,5 @@
-// // (function() {
 import angular from 'angular';
-import React from 'react';
-import { react2angular, ReactComp } from '../react/app';
-
-console.log('angular', angular);
-console.log('react', React, ReactComp, react2angular);
+import registerComponents from '../react/app';
 
 // class AppController {
 //   constructor() {
@@ -14,8 +9,7 @@ console.log('react', React, ReactComp, react2angular);
 
 let app = angular.module('app', []);
 
-console.log({app});
-app.component('reactComp', react2angular(ReactComp, ['count', 'onInc', 'onDec']));
+registerComponents(app);
 
 app.controller('AppController', ['$scope', function($scope) {
   $scope.message = 'Hello from Angular!!';
@@ -34,6 +28,3 @@ app.controller('AppController', ['$scope', function($scope) {
     $scope.$apply();
   }
 }]);
-
-// app.controller('AppController', AppController);
-// alert('hello from app.js');
