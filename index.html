@@ -13,7 +13,7 @@
     <h1>{{ message }}</h1>
     <button ng-click="toggleReactComponent()">Toggle React</button>
     <div ng-if="showReactComponent">
-      <react-comp></react-comp>
+      <react-comp count="count" on-inc="increment" on-dec="decrement"></react-comp>
     </div>
     <!-- <div id="react-app"></div> -->
   </div>

@@ -15,13 +15,23 @@ console.log('react', React, ReactComp, react2angular);
 let app = angular.module('app', []);
 
 console.log({app});
-app.component('reactComp', react2angular(ReactComp));
+app.component('reactComp', react2angular(ReactComp, ['count', 'onInc', 'onDec']));
 
 app.controller('AppController', ['$scope', function($scope) {
   $scope.message = 'Hello from Angular!!';
   $scope.count = 25;
   $scope.toggleReactComponent = () => {
     $scope.showReactComponent = !$scope.showReactComponent;
+  }
+  $scope.increment = () => {
+    console.log('inc called')
+    $scope.count++;
+    $scope.$apply();
+  }
+  $scope.decrement = () => {
+    console.log('dec called')
+    $scope.count--;
+    $scope.$apply();
   }
 }]);
 
