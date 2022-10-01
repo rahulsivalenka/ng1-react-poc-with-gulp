@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "5.10.1"
+
+branches:
+  only:
+    - master
+
+script:
+  - npm install
+
+cache:
+  directories:
+  - node_modules
+
+notifications:
+  email:
+    - latchkey@gmail.com
