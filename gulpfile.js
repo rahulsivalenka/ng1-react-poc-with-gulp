@@ -75,7 +75,7 @@ let bundles = [
   },
   {
     name: 'react',
-    index: './src/react/index.js',
+    index: './src/react/app.js',
     output: './react/',
     hasBundle: true,
     minify: minify,
